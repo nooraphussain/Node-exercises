@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs  = require('fs');
 
 //Asynchronous - non-blocking, uses callbacks
 fs.readFile('project/fileSystem/example.txt', 'utf8', (err, data) => {

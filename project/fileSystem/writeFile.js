@@ -1,7 +1,7 @@
-import fs from 'fs';
+const fs  = require('fs');
 
 //Asynchronous
-fs.writeFile('project/fileSystem/original.txt', 'Writing contents to file.', (err, data) => {
+fs.writeFile('project/fileSystem/original.txt', 'Writing contentsto file.', (err, data) => {
     if(err){
         console.log('Error while writing file:', err);
     }else{
@@ -19,7 +19,7 @@ try{
 }
 
 //using promises;
-await fs.promises.writeFile('project/fileSystem/original.txt', 'Hello async-await');
+await fs.promises.writeFile('project/fileSystem/original.txt', 'Hello async-await ');
 
 
 //syn => async => promises (priority order)
