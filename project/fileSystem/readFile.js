@@ -11,5 +11,11 @@ fs.readFile('project/fileSystem/example.txt', 'utf8', (err, data) => {
 })
 
 
+//Synchronous - blocks the thread until operation completes
+try{
+    const data = fs.readFileSync('project/fileSystem/example.txt', 'utf8');
+    console.log('Data in the file:\n', data);
+}catch(err){
+    console.error(err);
+}
 
-//Synchronous - blocks the thread until operation completes;
