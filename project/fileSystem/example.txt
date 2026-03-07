@@ -1,0 +1,5 @@
+| Type             | Function signature                    | Behavior                                     |
+| ---------------- | ------------------------------------- | -------------------------------------------- |
+| **Synchronous**  | `fs.readFileSync`, `fs.writeFileSync` | Blocks the thread until operation completes  |
+| **Asynchronous** | `fs.readFile`, `fs.writeFile`         | Non-blocking, uses callbacks                 |
+| **Promises API** | `fs.promises.readFile`                | Returns a Promise → works with `async/await` |

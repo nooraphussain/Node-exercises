@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 fs.readFile('project/fileSystem/original.txt', 'utf8', (err, data) =>{
     if(err){
