@@ -13,4 +13,4 @@ router.get('/profile', (req,res) =>{
 //app.js
 
 const userRouter = require('/routerLevel.js');
-app.use('/user', userRouter); // routerLevel middleware application
+app.use('/user', userRouter); 
